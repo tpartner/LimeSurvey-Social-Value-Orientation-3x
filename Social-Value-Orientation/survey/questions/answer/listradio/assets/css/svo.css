@@ -1,0 +1,215 @@
+
+/***** 
+    Styles for the Social Value Orientation question theme
+    Copyright (C) 2020 - Tony Partner (http://partnersurveys.com)
+    Licensed MIT, GPL
+    Version - 1.0
+    Create date - 03/12/2020
+*****/
+
+/** SOCIAL VALUE ORIENTATION QUESTION **/
+
+.svo-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 648px;
+}
+
+.svo-row-label {
+	clear: both;
+	text-align: center;
+	font-size: 16px;
+}
+
+.svo-row-label.top {
+	margin-bottom: 50px;
+	padding-top: 5px;
+}
+
+.svo-row-label.bottom {
+	margin-top: 50px;
+	padding-bottom: 5px;
+}
+
+.svo-item {
+	float: left;
+	width: 11.11111111111111%;
+}
+
+.svo-item-button-wrapper {
+	padding: 10px 15.27777777777778%;
+    background: #CCD5DD;
+	width: 69.44444444444444%;
+	width: auto; 
+}
+
+.svo-item:first-child .svo-item-button-wrapper {
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	-khtml-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+.svo-item:nth-last-child(2) .svo-item-button-wrapper {
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	-khtml-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.svo-item input[type="radio"] {
+	position: absolute;
+	left: -9999em;
+}
+
+label.svo-item-button {
+	position: relative;
+	display: block;
+    height: 0;
+    width: 100%;
+	margin: 0;
+	padding-top: 100%;
+    background: #FFFFFF;
+	-moz-transition: background-color 300ms ease; 
+	-o-transition: background-color 300ms ease; 
+	-webkit-transition: background-color 300ms ease; 
+	transition: background-color 300ms ease;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	border-radius: 50%;
+    cursor: pointer;
+	font-weight: normal;
+}
+
+.svo-item:hover label.svo-item-button,
+.svo-item:hover label.svo-item-button > span > span {
+    background-color: #5b7fa5;
+	color: #FFFFFF;
+}
+
+.svo-item input[type="radio"]:checked + label.svo-item-button,
+.svo-item input[type="radio"]:checked + label.svo-item-button:hover,
+.svo-item input[type="radio"]:checked + label.svo-item-button > span > span,
+.svo-item input[type="radio"]:checked + label.svo-item-button:hover > span > span {
+	background-color: #233140;
+	cursor:default;
+	color: #FFFFFF;
+}
+
+label.svo-item-button > span {
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+}
+
+label.svo-item-button > span.top {
+	top: -50px;
+}
+
+label.svo-item-button > span.bottom {
+	bottom: -50px;
+}
+
+label.svo-item-button > span > span {
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #233140;
+	background: #EBEBEB;
+	-moz-transition: background-color 300ms ease; 
+	-o-transition: background-color 300ms ease; 
+	-webkit-transition: background-color 300ms ease; 
+	transition: background-color 300ms ease;
+	text-align:center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+	.svo-outer-wrapper {
+		margin: 0 auto 20px auto;
+		padding-top: 50px;
+		width: 256px; 
+	}
+	.svo-wrapper {
+		display:block;
+		position: relative;
+	}
+	
+	.svo-row-label {
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		margin-left: -25px;
+		text-align: center;
+		width: 150px;
+		background-color: transparent !important;
+	}
+	
+	.svo-row-label.bottom,
+	.svo-row-label.top {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	
+	.svo-row-label.bottom {
+		left: auto;
+		right: 0;
+		margin-right: -25px;
+		padding: 5px 0 0 0;
+	}
+	
+	.svo-item {
+		float: none;
+		width: auto;
+	}
+	
+	.svo-item-button-wrapper {
+		margin: 0 auto;
+		padding: 5px;
+		width: 46px;
+	}
+	
+	.svo-item:first-child .svo-item-button-wrapper {
+		-moz-border-radius: 5px 5px 0 0;
+		-webkit-border-radius: 5px 5px 0 0;
+		-khtml-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 0 0;
+	}
+	
+	.svo-item:nth-last-child(2) .svo-item-button-wrapper {
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+		-khtml-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+	}
+
+	label.svo-item-button > span {
+		width: 120%;
+	}
+	
+	label.svo-item-button > span.top {
+		top: 2px;
+		bottom: 0;
+		left: -150%;
+	}
+	
+	label.svo-item-button > span.bottom {
+		top: 2px;
+		bottom: 0;
+		right: -151%;
+		left: auto;
+	}
+	
+	.svo-item .under-480 {
+		display: block !important;
+	}
+}
+

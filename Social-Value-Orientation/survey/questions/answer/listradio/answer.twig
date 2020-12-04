@@ -1,0 +1,43 @@
+{#
+/**
+ * List Radio Html
+ *
+ * @var $name
+ * @var $value
+ */
+#}
+
+<!-- List Radio -->
+
+{% set qID = name|split('X')[2] %}
+
+<!-- answer -->
+{{ sTimer }}
+
+<div class="svo-outer-wrapper">
+	<div class="svo-wrapper">
+		<div class="svo-row-label top">{{ question_template_attribute.label_top }}<span class="value hidden"></span></div>
+		<div class="svo-items-wrapper" role="radiogroup" aria-labelledby="ls-question-text-{{ name }}">
+			{{ sRows }}
+			<div style="clear:both;"></div>
+		</div>
+		<div class="svo-row-label bottom">{{ question_template_attribute.label_bottom }}<span class="value hidden"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+{# Value for expression manager javascript (use id) ; no need to submit #}
+{{ C.Html.hiddenField("java"~name,value,({
+    'id' : "java"~name,
+    'disabled' : true,
+}))
+}}
+<!-- end of answer -->
+
+<script type="text/javascript" charset="utf-8">
+	
+	$(document).on('ready pjax:scriptcomplete',function(){
+		
+		initSVO($('#question{{ qID }}'), '{{ question_template_attribute.show_values }}');
+ 
+	});
+</script>
