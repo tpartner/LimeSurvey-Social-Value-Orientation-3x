@@ -1,14 +1,13 @@
-# A Social Value Orientation (VSO) scale type question for LimeSurvey
+# A Social Value Orientation (VSO) scale type question for LimeSurvey 3.x
 **A custom question theme that transforms a list-radio type question into a Social Value Orientation type question. (Thanks to [Ryan O. Murphy](http://ryanomurphy.com/styled-2/index.html)) ([Social value orientations](https://en.wikipedia.org/wiki/Social_value_orientations) )**
 
-Compatible with LimeSurvey versions 3.x and 4.x.
+Compatible with LimeSurvey versions 3.x.
 
 ![Image Social Value Orientation 1](/Social-Value-Orientation/survey/questions/answer/listradio/assets/images/svo_1.png)
 
 **Implementation:**
 
-1) - **Manual installation (3.x and 4.x)** - Extract the download and upload the *Social-Value-Orientation* folder to */pathToLimeSurvey/upload/themes/question/*.
-    - **Theme manager (4.x)** - Extract the download, compress (zip) the *Social-Value-Orientation* folder and import via the theme manager.
+1) - **Manual installation** - Extract the download and upload the *Social-Value-Orientation* folder to */pathToLimeSurvey/upload/themes/question/*.
 
 2) Create a list-radio question, click Save.
 
